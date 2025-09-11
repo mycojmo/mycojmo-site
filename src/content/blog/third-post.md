@@ -2,7 +2,7 @@
 title: "Mycorrhiza"
 description: "How would you describe the services offered?"
 pubDate: "Sep 5 2025"
-heroImage: "/blog-placeholder-2.jpg"
+heroImage: "/mycorrhizae.png"
 ---
 
 

@@ -2,7 +2,7 @@
 title: "Hello World"
 description: "What are we about?"
 pubDate: "Aug 28 2025"
-heroImage: "/blog-placeholder-3.jpg"
+heroImage: "/blog1.png"
 ---
 
-We're in business! Find out more.
+We're in business! Email to find out more.
