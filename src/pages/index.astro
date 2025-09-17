@@ -3,6 +3,8 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import mycorrhizaeImage from '/public/mycorrhizae.png';
+import { Image } from 'astro:assets';
 ---
 
 <!doctype html>
@@ -13,6 +15,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<body>
 		<Header />
 		<main>
+			<Image src={mycorrhizaeImage} alt="Mycorrhizae" loading="eager" />
 			<h2 id="hi-is-this-thing-on-">hi! is this thing on??</h2>
 			<h3 id="desirable-have-done-it-can-do-it-i-absolutely-love-it-">Desirable (have done it, can do it; i absolutely love it.)</h3>
 			<h4 id="1-throw-me-in-the-deep-end">1. Throw me in the deep end</h4>
