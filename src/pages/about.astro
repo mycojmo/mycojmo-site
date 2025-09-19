@@ -1,5 +1,7 @@
 ---
 import Layout from '../layouts/BlogPost.astro';
+import mycorrhizaeImage from '/public/myco-cartoon.png';
+import { Image } from 'astro:assets';
 ---
 
 <Layout
@@ -17,13 +19,13 @@ import Layout from '../layouts/BlogPost.astro';
 	<p>
 		My name is Justin Pewitt Moore. I live in Stanford, CA and am originally from Franklin, TN. I'm fascinated by:
 		<ul>
-		<ol> math and have been since 1993</ol>
-		<ol> computers and have been since 1998</ol>
-		<ol> ultimate frisbee and have been since 2004</ol>
-		<ol> space and have been since 2006</ol>
-		<ol> bitcoin and have been since 2012</ol>
-		<ol> fungi and have been since 2017</ol>
-		<ol> parenting and have been since 2020</ol>
+			<li> math and have been since 1993</li>
+			<li> computers and have been since 1998</li>
+			<li> ultimate frisbee and have been since 2004</li>
+			<li> space and have been since 2006</li>
+			<li> bitcoin and have been since 2012</li>
+			<li> fungi and have been since 2017</li>
+			<li> parenting and have been since 2020</li>
 		</ul>
 	</p>
 
@@ -32,10 +34,36 @@ import Layout from '../layouts/BlogPost.astro';
 	</p>
 
 	<p>
-		As I understand it, no plant can get much taller than ~1ft without the aid of fungi:  symbiosis required, two kingdoms working together. Mycorrhizal fungi represent this connecting point between the plant and fungi kingdoms. An easy way to think about how this fancy term works is the following: fungi mine the soil for additional resources (water, minerals) and provide said resources and efficiency boost to the plant. In return, the plants provide the fungi with sugars that it needs to survive. Beautiful!
+		Most plants cannot get much taller than ~1ft without the aid of fungi:  symbiosis required; two kingdoms working together. Mycorrhizal fungi represent this overlap between the plant and fungi kingdoms. An easy way to think about how this fancy term works is the following: fungi mine the soil for additional resources (water, minerals) and provide said resources and efficiency boost to the plant. In return, the plants provide the fungi with sugars that it needs to survive.
+	</p>
+
+	<p><Image src={mycorrhizaeImage} alt="Mycorrhizae" width={240} height={240} style="display: block; margin: 0.5em 0;" />
+		Mycorrhizal plants are more likely to 
+		<ul>
+			<li>express resistance to:</li>
+				<ul>
+					<li>Disease</li>
+					<li>Drought</li>
+					<li>Salinity</li>
+					<li>Insects</li>
+					<li>Toxicity</li>
+				</ul>
+			<li>Colonization of barren soil</li>
+		</ul>
+	</p>
+
+	<p>Mycorrhizal networks proposed functions and effects
+		<ul>
+			<li>potential nutrient and photosynthate transfer between plants (the internet underground)</li>
+			<li>potential signaling and communication between plants</li>
+			<li>Allelopathic communication (read: altering chemical production/efficacy to potentially interfere with the development of other plants or organisms)</li>
+			<li>Defensive communication</li>
+		</ul>
 	</p>
 
 	<p>
-		Your tree. Your roots. My spores, metaphorically of course. Let's collaborate! Please reach out if you're intrigued.
+		tl;dr - better together.
+
+		Your tree. Your roots. My spores, metaphorically of course. Let's help one anohter. Please reach out if you're intrigued: <a href="mailto:work@mycojmo.com">work@mycojmo.com</a>
 	</p>
 </Layout>
