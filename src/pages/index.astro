@@ -3,7 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
-import mycorrhizaeImage from '/public/mycorrhizae.png';
+import mycorrhizaeImage from '/public/mycojmo-index-hdr.png';
 import { Image } from 'astro:assets';
 ---
 
@@ -14,16 +14,24 @@ import { Image } from 'astro:assets';
 	</head>
 	<body>
 		<Header />
-		<main>
+		<main class="index-page">
 			<Image src={mycorrhizaeImage} alt="Mycorrhizae" loading="eager" />
-			<h2 id="hi-is-this-thing-on-">hi! is this thing on??</h2>
+			<hr>
+			<h2>Welcome</h2>
+
+			<p>
+				MycoJMO is a consulting company where I bring my talents to you and your organization to collaboratively discover what is needed. Maybe you already know; if so, I can build that, or upgrade it, or untangle it, or get in there and figure out how it works / document it, or simply fix it. Maybe you want me to embed with your team to offer unbiased opinions about your work force. Maybe you have no idea and we'll simply discover it together, I welcome all of it! Why the name? The word <b>Myco</b> relates to fungi and <b>JMO</b> is what a lot of folks call me.
+			</p>
+
+			
 			<h3 id="desirable-have-done-it-can-do-it-i-absolutely-love-it-">Desirable (have done it, can do it; i absolutely love it.)</h3>
 			<h4 id="1-throw-me-in-the-deep-end">1. Throw me in the deep end</h4>
 				<ul>
 				<li>Fearless pursuer of order amidst chaos</li>
 				<li>Make sense of complicated, tangled web of complexity</li>
 				<li>Ask questions to uncover root issue(s)</li>
-				<li>New toolchain, new framework, new cloud, new editor; all good with me!</li>
+				<li>New toolchain, new framework, new cloud, new editor; good with me!</li>
+				<li>Our custom toolchain, our new framework, our new cloud, our new editor; good with me!</li>
 				</ul>
 			<h4 id="2-growing-your-talent-internally-and-via-hiring-">2. Growing your talent (internally and via hiring)</h4>
 				<ul>
@@ -34,8 +42,8 @@ import { Image } from 'astro:assets';
 				</ul>
 			<h4 id="3-a-client-is-stuck">3.  A client is stuck</h4>
 				<ul>
-				<li>You know the feeling of &quot;The production bug is a result of <em>my code</em>.&quot; ? i crave working like this supercharged feeling without the prod bug!</li>
-				<li>I see the way out of the problem for the client :: It&#39;s <strong>go</strong> time -- i'&#39;'m going to be working <strong>late</strong> on this one.</li>
+				<li>You know the feeling of "The production bug is a result of <em>my code</em>." ? i crave working like this supercharged feeling without the prod bug!</li>
+				<li>I see the way out of the problem for the client :: It's <strong>go</strong> time -- i'm going to be working <strong>late</strong> on this one.</li>
 				</ul>
 			<h4 id="4-no-one-else-wants-to-do-the-grunt-work-manual-labor-annoying-task">4.  No one else wants to do the grunt work / manual labor / annoying task</h4>
 				<ul>
@@ -46,16 +54,19 @@ import { Image } from 'astro:assets';
 				<ol>
 					<li>Setting job titles and setting roles and responsibilities for them.</li>
 					<li>Setting budgets or staff asks</li>
-					<li>Designing career tracks and promotional pathways.</li>
+					<li>Designing career tracks and promotional pathways.</li>˝
 					<li>Setting paybands and justifying promotions across departments</li>
 					<li>Vendor management</li>
 				</ol>
-			<h3 id="tell-me">Tell me</h3>
-				<p><strong>how crazy, how dumb, how inefficient, how ridiculous your setup is :: no judgment. Let&#39;s see what we can do!</strong></p>
-				<p>if you think it sounds like we should work together,
-				shoot me an email at work@mycojmo.com</p>
+			<hr>
+			<h3 id="tell-me">How's this sound:</h3>
+				<p>Tell me how <strong>crazy</strong>, how <strong>dumb</strong>, how <strong>inefficient</strong>, how <strong>ridiculous</strong> your setup is :: you will receive <strong>no judgment</strong>. Reach out to me. We'll agree on a price for a short engagement (a few days up to a few weeks) of being laser focused on and embedded in something you need solved. If you're not satisfied with the value I'm adding; I'll disengage and return the money.</p>
+			<p>if you think it sounds like we should work together,
+				shoot me an email at <a href="mailto:work+index@mycojmo.com">work+index@mycojmo.com</a></p>
 				<p>if you want to discuss something you think i'm interested in,
-				shoot me an email at play@mycojmo.com</p>
+				shoot me an email at <a href="mailto:play+index@mycojmo.com">play+index@mycojmo.com</a></p>
+				<p>if you don't trust the flow and need to know my bonafides, I'll direct you to my full CV --> <a href="https://justinpmoore.com" target="_blank"> https://justinpmoore.com</a></p>
+				<p>if you're looking for parenting help, find me over here --> <a href="https://pitd.io" target="_blank"> https://pitd.io</a></p>
 		</main>
 		<Footer />
 	</body>

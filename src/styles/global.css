@@ -74,6 +74,15 @@ h4 {
 h5 {
   font-size: 1.25em;
 }
+
+.index-page h3 {
+  font-size: 1.2em !important; /* Even smaller than default h3 */
+}
+
+.index-page h4 {
+  font-size: 1.0em !important; /* Even smaller than default h4 */
+}
+
 strong,
 b {
   font-weight: 700;
