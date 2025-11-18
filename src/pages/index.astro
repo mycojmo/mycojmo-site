@@ -3,8 +3,6 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
-import mycorrhizaeImage from '/public/mycojmo-index-hdr.png';
-import { Image } from 'astro:assets';
 ---
 
 <!doctype html>
@@ -15,13 +13,11 @@ import { Image } from 'astro:assets';
 	<body>
 		<Header />
 		<main class="index-page">
-			<Image src={mycorrhizaeImage} alt="Mycorrhizae" loading="eager" />
-			<hr>
-			<h1>Justin Moore</h1>
-			<h2>Head of Technology | Engineering Leader | PhD Astrophysicist → Bitcoin Infrastructure Architect</h2>
+			<h1>Justin Pewitt Moore</h1>
+			<h2>Head of Technology | Engineering Leader | Coach | PhD Astrophysicist dropout → Bitcoin Infrastructure Architect</h2>
 
 			<p>
-				I went from managing robotic telescopes across 3 continents to leading 30+ engineers
+				I went from handling software and hardware for robotic telescopes across 3 continents to leading 30+ engineers
 				building secure Bitcoin multisig collaborative custody infrastructure. I bring scientific rigor with startup velocity.
 			</p>
 
@@ -45,14 +41,14 @@ import { Image } from 'astro:assets';
 
 			<h4>Systems at Scale</h4>
 			<ul>
+				<li>Designed, reviewed, operated, and contributed to systems handling Bitcoin custody and trading at scale (cold storage systems protecting $10B+ | 100k BTC)</li>
+				<li>Built and shipped automation reducing manual effort by 90%</li>
 				<li>Managed distributed robotic telescope network spanning 3 continents (PhD work)</li>
-				<li>Built and shipped automation reducing manual effort by 90% (DocuSign integration)</li>
-				<li>Designed and operated systems handling Bitcoin custody and trading at scale</li>
 				<li>Built custom hardware + software for astronomical research (custom polarimeter for GRBs)</li>
 			</ul>
 
 			<p>
-				<strong>Technologies:</strong> Python, Kubernetes, AWS, React, Flask, Bitcoin protocol, Terraform,
+				<strong>Technologies:</strong> Python, Kubernetes, AWS, GCP, Azure, React, Flask, Bitcoin protocol, Terraform,
 				Helm, Jenkins, PostgreSQL, Redis | <strong>Certified:</strong> CKA (Kubernetes Administrator, 2024)
 			</p>
 
@@ -62,10 +58,10 @@ import { Image } from 'astro:assets';
 
 			<h3>Pattern Recognition Across Complex Systems</h3>
 			<p>
-				I've debugged Kubernetes networking issues, designed Bitcoin custody architecture,
-				and managed telescope networks observing one-time astronomical events. When your
-				team is stuck, I can usually identify the root cause quickly—not because I'm
-				smarter, but because I've debugged this category of problem many times before.
+				I've debugged Kubernetes issues, designed and implemented Bitcoin custody architecture,
+				and managed a global telescope network observing one-time astronomical events. When your
+				team is stuck, I can usually identify the root cause quickly -- not because I'm
+				smarter, but because I've taken a lot of things apart and I am relentless at solving puzzles.
 			</p>
 			<p>
 				<strong>Recent example:</strong> Led post-RIF recovery, scaled team 3x, shipped daily releases,
@@ -86,23 +82,24 @@ import { Image } from 'astro:assets';
 
 			<h3>Building High-Performing Teams</h3>
 			<p>
-				I don't just architect systems—I build teams that ship. Created comprehensive
-				onboarding programs (Unchained University, Proving Grounds) that reduced
-				ramp-up time from 3 months to 3 weeks.
+				I don't just architect systems -- I build teams that ship. I created comprehensive
+				onboarding programs (Unchained University, `Proving Grounds`) that reduced
+				ramp-up time from weeks/months to a day or two.
 			</p>
 			<p>
 				<strong>Track record:</strong> Led teams from 5 to 30+ engineers, established coding standards
-				and review processes, coached multiple engineers into leadership roles.
+				and review processes, coached multiple engineers into leadership roles. Coached others from completely
+				different departments. Fearless in sharing my opinions.
 			</p>
 
-			<h3>Full-Stack Thinking (Literally)</h3>
+			<h3>Full-Stack Thinking</h3>
 			<p>
-				PhD-trained to think deeply about complex systems. Can debug from hardware
-				(PCBs, networking) through cloud infrastructure (Kubernetes, AWS) to business
-				impact (cost optimization, delivery predictability).
+				PhD-dropout trained me to think deeply about complex systems. Can debug from hardware
+				(PCBs, networking, home labs) through cloud infrastructure (Kubernetes, AWS, GCP, Azure) to business
+				impact (cost optimization, delivery predictability). Handy with agents.
 			</p>
 			<p>
-				<strong>Unique background:</strong> Built custom scientific instrumentation → managed
+				<strong>Unique background:</strong> Built custom scientific instrumentation in the machine shop → managed
 				multi-continent distributed systems → led Bitcoin infrastructure teams. I bring
 				patterns from all three worlds.
 			</p>
@@ -120,6 +117,7 @@ import { Image } from 'astro:assets';
 				<li>Shipping in regulated/high-stakes environments (SOC 2, Bitcoin custody)</li>
 				<li>Building teams and culture from scratch or rebuilding after disruption</li>
 				<li>Embedded leadership for high-impact technical initiatives</li>
+				<li>Finding and growing talent</li>
 			</ul>
 
 			<p><strong>Not my sweet spot:</strong></p>
@@ -135,7 +133,7 @@ import { Image } from 'astro:assets';
 
 			<p>
 				<strong>Short to medium-term embedded engagements</strong> (2 weeks to 12 months). I become
-				part of your team, understand the problem deeply, and work alongside you to solve it.
+				part of your team, dive in to understand the problem(s) deeply, and work alongside you to solve it.
 			</p>
 
 			<p>
@@ -149,7 +147,7 @@ import { Image } from 'astro:assets';
 				<li>Infrastructure costs optimized</li>
 				<li>Delivery predictability improved</li>
 				<li>Knowledge transferred, not hoarded</li>
-				<li>You're set up to continue without me</li>
+				<li>You're empowered to continue without me</li>
 			</ul>
 
 			<hr>
@@ -168,7 +166,7 @@ import { Image } from 'astro:assets';
 			<p>
 				<strong>For Technical Conversations:</strong><br>
 				Want to talk about interesting problems, distributed systems, Bitcoin infrastructure,
-				or Kubernetes architecture?
+				garden tech, fungal networks, or Kubernetes architecture?
 			</p>
 			<p>
 				<strong>Email:</strong> <a href="mailto:play@mycojmo.com">play@mycojmo.com</a>
@@ -193,7 +191,7 @@ import { Image } from 'astro:assets';
 				organizations to enable growth through collaborative problem-solving.
 			</p>
 			<p>
-				Plus, JMO is what people call me.
+				Plus, `jmo` is what people call me.
 			</p>
 
 			<hr>
@@ -201,8 +199,7 @@ import { Image } from 'astro:assets';
 			<h2>About the Parent Stuff</h2>
 
 			<p>
-				If you're looking for parenting help (specifically around managing when you or
-				your partner is traveling), find me over here → <a href="https://pitd.io" target="_blank">pitd.io</a>
+				If you're looking for parenting help, find me over here → <a href="https://pitd.io" target="_blank">pitd.io</a>
 			</p>
 
 			<hr>
@@ -210,7 +207,7 @@ import { Image } from 'astro:assets';
 			<p>
 				<strong>Note:</strong> This is the consulting/fractional work site. For full-time leadership
 				roles or co-founder opportunities, let's talk about what you're building and
-				whether my background (PhD dropout → Bitcoin → engineering leadership) fits your needs.
+				whether my background fits your needs.
 			</p>
 		</main>
 		<Footer />
