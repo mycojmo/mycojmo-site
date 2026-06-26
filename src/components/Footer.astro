@@ -3,7 +3,15 @@ const today = new Date();
 ---
 
 <footer>
-	&copy; {today.getFullYear()} MycoJMO LLC. All rights reserved.
+	<div class="brand">MycoJMO</div>
+	<div class="copy">&copy; {today.getFullYear()} MycoJMO LLC &middot; Stanford, CA</div>
+	<div class="foot-links">
+		<a href="/blog">Blog</a>
+		<a href="/about">About</a>
+		<a href="https://linkedin.com/in/justinpewittmoore" target="_blank">LinkedIn</a>
+		<a href="https://github.com/mycojmo" target="_blank">GitHub</a>
+		<a href="https://pitd.io" target="_blank">pitd.io &#8599;</a>
+	</div>
 	<div class="social-links">
 		<a href="https://x.com/mycojmo" target="_blank">
 			<span class="sr-only">Follow MycoJMO on X</span>
@@ -27,22 +35,48 @@ const today = new Date();
 </footer>
 <style>
 	footer {
-		padding: 2em 1em 6em 1em;
-		background: linear-gradient(var(--gray-gradient)) no-repeat;
-		color: rgb(var(--gray));
+		padding: 3em 1em 4em 1em;
+		background: var(--teal-deep);
+		color: #acc3bd;
 		text-align: center;
+	}
+	.brand {
+		font-family: var(--display);
+		font-weight: 600;
+		font-size: 20px;
+		color: #f4f1e8;
+		margin-bottom: 6px;
+	}
+	.copy {
+		font-size: 14px;
+	}
+	.foot-links {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 18px;
+		margin-top: 14px;
+	}
+	.foot-links a {
+		color: #acc3bd;
+		text-decoration: none;
+		font-size: 14px;
+		font-weight: 700;
+	}
+	.foot-links a:hover {
+		color: #f4f1e8;
 	}
 	.social-links {
 		display: flex;
 		justify-content: center;
 		gap: 1em;
-		margin-top: 1em;
+		margin-top: 1.2em;
 	}
 	.social-links a {
 		text-decoration: none;
-		color: rgb(var(--gray));
+		color: #8fb0a8;
 	}
 	.social-links a:hover {
-		color: rgb(var(--gray-dark));
+		color: #f4f1e8;
 	}
 </style>

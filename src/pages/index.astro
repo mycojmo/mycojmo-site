@@ -14,203 +14,291 @@ const pageDescription =
 	</head>
 	<body>
 		<Header />
-		<main class="index-page">
-			<h1>Justin Pewitt Moore</h1>
-			<h2>Head of Technology | Engineering Leader | Coach | PhD Astrophysicist dropout → Bitcoin Infrastructure Architect</h2>
+		<main>
+			<!-- Hero -->
+			<section class="hero-band">
+				<div class="hero">
+					<div>
+						<div class="eyebrow">Embedded engineering leadership</div>
+						<h1>Justin&nbsp;Pewitt <span class="em">Moore</span></h1>
+						<p class="role">Head of Technology · Engineering Leader · Coach · PhD Astrophysicist dropout → Bitcoin Infrastructure Architect</p>
+						<p class="lede">
+							I take teams from chaos to order — post-crisis recovery, infrastructure
+							modernization, and shipping in high-stakes environments, from Bitcoin
+							custody to Kubernetes. Scientific rigor with startup velocity.
+						</p>
+						<div class="cta-row">
+							<a class="btn btn-primary" href="#lets-talk">Let's talk →</a>
+							<a class="btn btn-ghost" href="https://justinpmoore.com/jmo-v2025-09-04.pdf" target="_blank">Download CV</a>
+						</div>
+						<div class="cred">
+							<a href="https://linkedin.com/in/justinpewittmoore" target="_blank">LinkedIn</a>
+							<a href="https://github.com/mycojmo" target="_blank">GitHub</a>
+							<a href="https://justinpmoore.com/jmo-v2025-09-04.pdf" target="_blank">CKA Certified · 2024</a>
+						</div>
+					</div>
+					<div class="photo-wrap">
+						<div class="photo-card">
+							<picture>
+								<source srcset="/justin.webp" type="image/webp" />
+								<img
+									src="/justin.jpg"
+									alt="Justin Pewitt Moore"
+									width="1040"
+									height="1560"
+									loading="eager"
+									fetchpriority="high"
+								/>
+							</picture>
+						</div>
+						<span class="photo-frame"></span>
+						<span class="photo-badge">Stanford, CA</span>
+					</div>
+				</div>
+			</section>
 
-			<p>
-				I went from handling software and hardware for robotic telescopes across 3 continents to leading 30+ engineers
-				building secure Bitcoin multisig collaborative custody infrastructure. I bring scientific rigor with startup velocity.
-			</p>
+			<!-- Stat band -->
+			<section class="stats">
+				<div class="stats-in">
+					<div class="stat">
+						<div class="v">30<small>+</small></div>
+						<div class="k">engineers led across Mobile, Data, Infrastructure, DevOps, QA &amp; Product</div>
+					</div>
+					<div class="stat">
+						<div class="v">40<small>%</small></div>
+						<div class="k">AWS infrastructure cost cut while migrating to Kubernetes (EKS)</div>
+					</div>
+					<div class="stat">
+						<div class="v"><small>$</small>10B<small>+</small></div>
+						<div class="k">in Bitcoin cold storage protected · zero-downtime operations</div>
+					</div>
+				</div>
+			</section>
 
-			<h3>What I've Led:</h3>
+			<!-- What I've led -->
+			<section class="block">
+				<div class="container">
+					<div class="sec-eyebrow">What I've led</div>
+					<h2 class="sec-title">Three things I'm relentless about</h2>
+					<p class="sec-sub">
+						I went from handling software and hardware for robotic telescopes across 3
+						continents to leading 30+ engineers building secure Bitcoin multisig
+						collaborative custody infrastructure. I bring patterns from systems most
+						people never get to take apart.
+					</p>
+					<div class="cards">
+						<div class="card">
+							<div class="ic">🧭</div>
+							<h3>Team leadership &amp; crisis management</h3>
+							<ul>
+								<li>Led 30+ engineer organization across Mobile, Data, Infrastructure, DevOps, QA, and Product teams</li>
+								<li>Took over post-RIF: management responsibility changed overnight from 0 → 18 engineers</li>
+								<li>Scaled team 3x while improving delivery from bi-weekly → weekly → daily production releases</li>
+								<li>Built Unchained University, Proving Grounds, and Internal Navigator onboarding programs</li>
+							</ul>
+						</div>
+						<div class="card">
+							<div class="ic">⚙️</div>
+							<h3>Infrastructure &amp; cost optimization</h3>
+							<ul>
+								<li>Cut AWS infrastructure costs by 40% while migrating to Kubernetes (EKS)</li>
+								<li>Passed SOC 2 Type II audit on first attempt</li>
+								<li>Maintained zero-downtime operations for Bitcoin custody systems (money can't wait)</li>
+								<li>Migrated from Ansible + EC2 to containerized infrastructure with custom Helm charts</li>
+							</ul>
+						</div>
+						<div class="card">
+							<div class="ic">🔭</div>
+							<h3>Systems at scale</h3>
+							<ul>
+								<li>Designed, operated, and contributed to systems handling Bitcoin custody and trading at scale (cold storage protecting $10B+ | 100k BTC)</li>
+								<li>Built and shipped automation reducing manual effort by 90%</li>
+								<li>Managed distributed robotic telescope network spanning 3 continents (PhD work)</li>
+								<li>Built custom hardware + software for astronomical research (custom polarimeter for GRBs)</li>
+							</ul>
+						</div>
+					</div>
+					<p class="sec-sub" style="margin-top:28px; margin-bottom:0; font-size:16px;">
+						<strong>Technologies:</strong> Python, Kubernetes, AWS, GCP, Azure, React, Flask,
+						Bitcoin protocol, Terraform, Helm, Jenkins, PostgreSQL, Redis &nbsp;|&nbsp;
+						<strong>Certified:</strong> CKA (Kubernetes Administrator, 2024)
+					</p>
+				</div>
+			</section>
 
-			<h4>Team Leadership & Crisis Management</h4>
-			<ul>
-				<li>Led 30+ engineer organization across Mobile, Data, Infrastructure, DevOps, QA, and Product teams</li>
-				<li>Took over post-RIF: management responsibility changed overnight from 0 → 18 engineers</li>
-				<li>Scaled team 3x while improving delivery from bi-weekly → weekly → daily production releases</li>
-				<li>Built Unchained University, Proving Grounds, and Internal Navigator onboarding programs</li>
-			</ul>
+			<!-- What I bring -->
+			<section class="block alt">
+				<div class="container">
+					<div class="sec-eyebrow">What I bring</div>
+					<h2 class="sec-title">Pattern recognition across complex systems</h2>
+					<div class="feature">
+						<div>
+							<span class="tag">Root-cause instinct</span>
+							<h3>When your team is stuck, I find the thread</h3>
+							<p>
+								I've debugged Kubernetes issues, designed and implemented Bitcoin custody
+								architecture, and managed a global telescope network observing one-time
+								astronomical events. I can usually identify the root cause quickly — not
+								because I'm smarter, but because I've taken a lot of things apart and I am
+								relentless at solving puzzles.
+							</p>
+						</div>
+						<div class="quote"><b>Recent example:</b> Led post-RIF recovery, scaled team 3x, shipped daily releases, and cut AWS costs 40% simultaneously.</div>
+					</div>
+					<div class="feature">
+						<div>
+							<span class="tag">Thriving in low-information environments</span>
+							<h3>Energized by what makes others anxious</h3>
+							<p>
+								Give me a crisis situation with unclear root cause, an unfamiliar codebase
+								with no documentation, or a new cloud platform I've never used. I'm energized
+								by what makes others anxious.
+							</p>
+						</div>
+						<div class="quote"><b>War story:</b> Management responsibility changed overnight 0→18 engineers post-RIF. Team recovered within 6 months, scaled to 30+ within 18 months, with zero regrettable attrition.</div>
+					</div>
+					<div class="feature">
+						<div>
+							<span class="tag">Building high-performing teams</span>
+							<h3>I build teams that ship, not just systems</h3>
+							<p>
+								I created comprehensive onboarding programs (Unchained University, Proving
+								Grounds) that reduced ramp-up time from weeks/months to a day or two.
+								Fearless in sharing my opinions.
+							</p>
+						</div>
+						<div class="quote"><b>Track record:</b> Led teams from 5 to 30+ engineers, established coding standards and review processes, and coached multiple engineers — across departments — into leadership roles.</div>
+					</div>
+					<div class="feature">
+						<div>
+							<span class="tag">Full-stack thinking</span>
+							<h3>From PCBs to cloud to business impact</h3>
+							<p>
+								PhD-dropout training taught me to think deeply about complex systems. I can
+								debug from hardware (PCBs, networking, home labs) through cloud infrastructure
+								(Kubernetes, AWS, GCP, Azure) to business impact (cost optimization, delivery
+								predictability). Handy with agents.
+							</p>
+						</div>
+						<div class="quote"><b>Unique background:</b> custom scientific instrumentation in the machine shop → multi-continent distributed systems → Bitcoin infrastructure teams. I bring patterns from all three worlds.</div>
+					</div>
+				</div>
+			</section>
 
-			<h4>Infrastructure & Cost Optimization</h4>
-			<ul>
-				<li>Cut AWS infrastructure costs by 40% while migrating to Kubernetes (EKS)</li>
-				<li>Passed SOC 2 Type II audit on first attempt</li>
-				<li>Maintained zero-downtime operations for Bitcoin custody systems (money can't wait)</li>
-				<li>Migrated from Ansible + EC2 to containerized infrastructure with custom Helm charts</li>
-			</ul>
+			<!-- Ideal scenarios -->
+			<section class="block">
+				<div class="container">
+					<div class="sec-eyebrow">My ideal scenarios</div>
+					<h2 class="sec-title">Chaos → Order → Knowledge Transfer → Next Challenge</h2>
+					<div class="cards" style="grid-template-columns:1fr 1fr;">
+						<div class="card">
+							<h3>I specialize in</h3>
+							<ul>
+								<li>Post-crisis team recovery and scaling</li>
+								<li>Infrastructure modernization and cost optimization</li>
+								<li>Shipping in regulated/high-stakes environments (SOC 2, Bitcoin custody)</li>
+								<li>Building teams and culture from scratch or rebuilding after disruption</li>
+								<li>Embedded leadership for high-impact technical initiatives</li>
+								<li>Finding and growing talent</li>
+							</ul>
+						</div>
+						<div class="card">
+							<h3>Not my sweet spot</h3>
+							<ul>
+								<li>Long-term maintenance of stable systems (I'll get bored, you'll get diminishing returns)</li>
+								<li>Pure HR / organizational design across departments</li>
+								<li>Vendor management and procurement negotiations</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
 
-			<h4>Systems at Scale</h4>
-			<ul>
-				<li>Designed, reviewed, operated, and contributed to systems handling Bitcoin custody and trading at scale (cold storage systems protecting $10B+ | 100k BTC)</li>
-				<li>Built and shipped automation reducing manual effort by 90%</li>
-				<li>Managed distributed robotic telescope network spanning 3 continents (PhD work)</li>
-				<li>Built custom hardware + software for astronomical research (custom polarimeter for GRBs)</li>
-			</ul>
+			<!-- How I work -->
+			<section class="block alt">
+				<div class="container">
+					<div class="sec-eyebrow">How I work</div>
+					<h2 class="sec-title">Short, embedded, high-trust engagements</h2>
+					<p class="sec-sub">
+						<strong>2 weeks to 12 months.</strong> I become part of your team, dive in to
+						understand the problem(s) deeply, and work alongside you to solve it — then
+						transfer the knowledge so you're empowered to continue without me.
+					</p>
+					<div class="callout">
+						<div>
+							<h3>My guarantee</h3>
+							<p>If after the first week you don't see clear value, I'll refund the engagement. In my career, I've never had to do this.</p>
+						</div>
+						<div class="seal">
+							<div class="big">100%</div>
+							<div class="lbl">first-week<br />value guarantee</div>
+						</div>
+					</div>
+					<p class="sec-sub" style="margin-top:30px; margin-bottom:0;">
+						<strong>What success looks like:</strong> your team is unblocked and shipping ·
+						infrastructure costs optimized · delivery predictability improved · knowledge
+						transferred, not hoarded · you're empowered to continue without me.
+					</p>
+				</div>
+			</section>
 
-			<p>
-				<strong>Technologies:</strong> Python, Kubernetes, AWS, GCP, Azure, React, Flask, Bitcoin protocol, Terraform,
-				Helm, Jenkins, PostgreSQL, Redis | <strong>Certified:</strong> CKA (Kubernetes Administrator, 2024)
-			</p>
+			<!-- Let's talk -->
+			<section class="block" id="lets-talk">
+				<div class="container">
+					<div class="sec-eyebrow">Let's talk</div>
+					<h2 class="sec-title">How can I serve?</h2>
+					<div class="contact">
+						<div class="c">
+							<div class="ce">For CTOs, VPs of Engineering, Founders</div>
+							<h3>Embed with your team</h3>
+							<p>Need someone to embed for a high-stakes project, turn around a stuck initiative, or bring technical leadership during growth or crisis?</p>
+							<a class="mail" href="mailto:work@mycojmo.com">work@mycojmo.com</a>
+						</div>
+						<div class="c">
+							<div class="ce">For technical conversations</div>
+							<h3>Just want to nerd out?</h3>
+							<p>Interesting problems, distributed systems, Bitcoin infrastructure, garden tech, fungal networks, or Kubernetes architecture.</p>
+							<a class="mail" href="mailto:play@mycojmo.com">play@mycojmo.com</a>
+						</div>
+					</div>
+				</div>
+			</section>
 
-			<hr>
+			<!-- Why the name -->
+			<section class="block alt">
+				<div class="container">
+					<div class="story">
+						<img src="/mycorrhizae-image.jpg" alt="Mycorrhizae" width="480" height="480" loading="lazy" />
+						<div>
+							<div class="sec-eyebrow" style="margin-bottom:6px;">Why the name</div>
+							<h3>Better, together</h3>
+							<p>
+								The word "Myco" relates to fungi and their mycorrhizal networks — underground
+								symbiotic connections that help forests thrive. Like mycorrhizae, I embed with
+								organizations to enable growth through collaborative problem-solving.
+							</p>
+							<p style="color:var(--ink-soft);">Plus, <strong>jmo</strong> is what people call me.</p>
+						</div>
+					</div>
+				</div>
+			</section>
 
-			<h2>What I Bring</h2>
-
-			<h3>Pattern Recognition Across Complex Systems</h3>
-			<p>
-				I've debugged Kubernetes issues, designed and implemented Bitcoin custody architecture,
-				and managed a global telescope network observing one-time astronomical events. When your
-				team is stuck, I can usually identify the root cause quickly -- not because I'm
-				smarter, but because I've taken a lot of things apart and I am relentless at solving puzzles.
-			</p>
-			<p>
-				<strong>Recent example:</strong> Led post-RIF recovery, scaled team 3x, shipped daily releases,
-				and cut AWS costs 40% simultaneously.
-			</p>
-
-			<h3>Thriving in High-Stakes, Low-Information Environments</h3>
-			<p>
-				Give me a crisis situation with unclear root cause, an unfamiliar codebase with
-				no documentation, or a new cloud platform I've never used. I'm energized by what
-				makes others anxious.
-			</p>
-			<p>
-				<strong>War story:</strong> Management responsibility changed overnight 0→18 engineers post-RIF.
-				Team recovered within 6 months, scaled to 30+ within 18 months, with zero
-				regrettable attrition.
-			</p>
-
-			<h3>Building High-Performing Teams</h3>
-			<p>
-				I don't just architect systems -- I build teams that ship. I created comprehensive
-				onboarding programs (Unchained University, `Proving Grounds`) that reduced
-				ramp-up time from weeks/months to a day or two.
-			</p>
-			<p>
-				<strong>Track record:</strong> Led teams from 5 to 30+ engineers, established coding standards
-				and review processes, coached multiple engineers into leadership roles. Coached others from completely
-				different departments. Fearless in sharing my opinions.
-			</p>
-
-			<h3>Full-Stack Thinking</h3>
-			<p>
-				PhD-dropout trained me to think deeply about complex systems. Can debug from hardware
-				(PCBs, networking, home labs) through cloud infrastructure (Kubernetes, AWS, GCP, Azure) to business
-				impact (cost optimization, delivery predictability). Handy with agents.
-			</p>
-			<p>
-				<strong>Unique background:</strong> Built custom scientific instrumentation in the machine shop → managed
-				multi-continent distributed systems → led Bitcoin infrastructure teams. I bring
-				patterns from all three worlds.
-			</p>
-
-			<hr>
-
-			<h2>My Ideal Scenarios</h2>
-
-			<p><strong>Chaos → Order → Knowledge Transfer → Next Challenge</strong></p>
-
-			<p>I specialize in:</p>
-			<ul>
-				<li>Post-crisis team recovery and scaling</li>
-				<li>Infrastructure modernization and cost optimization</li>
-				<li>Shipping in regulated/high-stakes environments (SOC 2, Bitcoin custody)</li>
-				<li>Building teams and culture from scratch or rebuilding after disruption</li>
-				<li>Embedded leadership for high-impact technical initiatives</li>
-				<li>Finding and growing talent</li>
-			</ul>
-
-			<p><strong>Not my sweet spot:</strong></p>
-			<ul>
-				<li>Long-term maintenance of stable systems (I'll get bored, you'll get diminishing returns)</li>
-				<li>Pure HR/organizational design across departments</li>
-				<li>Vendor management and procurement negotiations</li>
-			</ul>
-
-			<hr>
-
-			<h2>How I Work</h2>
-
-			<p>
-				<strong>Short to medium-term embedded engagements</strong> (2 weeks to 12 months). I become
-				part of your team, dive in to understand the problem(s) deeply, and work alongside you to solve it.
-			</p>
-
-			<p>
-				<strong>My guarantee:</strong> If after the first week you don't see clear value, I'll refund
-				the engagement. In my career, I've never had to do this.
-			</p>
-
-			<p><strong>What success looks like:</strong></p>
-			<ul>
-				<li>Team is unblocked and shipping</li>
-				<li>Infrastructure costs optimized</li>
-				<li>Delivery predictability improved</li>
-				<li>Knowledge transferred, not hoarded</li>
-				<li>You're empowered to continue without me</li>
-			</ul>
-
-			<hr>
-
-			<h2>Let's Talk</h2>
-
-			<p>
-				<strong>For CTOs, VPs of Engineering, Founders:</strong><br>
-				Need someone to embed with your team for a high-stakes project, turn around a
-				stuck initiative, or bring technical leadership during growth/crisis?
-			</p>
-			<p>
-				<strong>Email:</strong> <a href="mailto:work@mycojmo.com">work@mycojmo.com</a>
-			</p>
-
-			<p>
-				<strong>For Technical Conversations:</strong><br>
-				Want to talk about interesting problems, distributed systems, Bitcoin infrastructure,
-				garden tech, fungal networks, or Kubernetes architecture?
-			</p>
-			<p>
-				<strong>Email:</strong> <a href="mailto:play@mycojmo.com">play@mycojmo.com</a>
-			</p>
-
-			<hr>
-
-			<p>
-				<strong>Credentials:</strong><br>
-				<a href="https://justinpmoore.com/jmo-v2025-09-04.pdf" target="_blank">Download Full CV</a> |
-				<a href="https://linkedin.com/in/justinpewittmoore" target="_blank">LinkedIn</a> |
-				<a href="https://github.com/mycojmo" target="_blank">GitHub</a>
-			</p>
-
-			<hr>
-
-			<h2>Why the name?</h2>
-
-			<p>
-				The word "Myco" relates to fungi and their mycorrhizal networks—underground
-				symbiotic connections that help forests thrive. Like mycorrhizae, I embed with
-				organizations to enable growth through collaborative problem-solving.
-			</p>
-			<p>
-				Plus, `jmo` is what people call me.
-			</p>
-
-			<hr>
-
-			<h2>About the Parent Stuff</h2>
-
-			<p>
-				If you're looking for parenting help, find me over here → <a href="https://pitd.io" target="_blank">pitd.io</a>
-			</p>
-
-			<hr>
-
-			<p>
-				<strong>Note:</strong> This is the consulting/fractional work site. For full-time leadership
-				roles or co-founder opportunities, let's talk about what you're building and
-				whether my background fits your needs.
-			</p>
+			<!-- Closing notes -->
+			<section class="block">
+				<div class="container">
+					<div class="closing">
+						<p style="margin:0 0 12px;">
+							<strong>Looking for parenting help?</strong> Find me over here →
+							<a href="https://pitd.io" target="_blank">pitd.io</a>
+						</p>
+						<p style="margin:0;">
+							<strong>Note:</strong> This is the consulting / fractional work site. For
+							full-time leadership roles or co-founder opportunities, let's talk about what
+							you're building and whether my background fits your needs.
+						</p>
+					</div>
+				</div>
+			</section>
 		</main>
 		<Footer />
 	</body>
