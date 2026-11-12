@@ -23,7 +23,10 @@
     "typescript": "5.8.3"
   },
   "devDependencies": {
-    "wrangler": "4.21.x"
+    "@toast-ui/editor": "^3.2.2",
+    "vite": "^6.4.6",
+    "wrangler": "4.21.x",
+    "yaml": "^2.9.1"
   },
   "scripts": {
     "astro": "astro",
@@ -32,7 +35,8 @@
     "check": "astro build && tsc && wrangler deploy --dry-run",
     "deploy": "wrangler deploy",
     "dev": "astro dev",
-    "preview": "astro build && wrangler dev"
+    "preview": "astro build && wrangler dev",
+    "editor": "vite --config editor/vite.config.mjs"
   },
   "type": "module"
 }

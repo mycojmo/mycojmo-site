@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MycoJMO Post Editor</title>
+    <link rel="icon" href="/favicon.svg" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <h1>Posts</h1>
+      <button type="button" id="new-post" class="primary">+ New post</button>
+      <ul id="post-list" aria-label="Existing posts"></ul>
+      <p class="hint">Local editor. Saving writes to <code>src/content/blog/</code>; commit and open a PR to publish.</p>
+    </aside>
+
+    <main>
+      <form id="post-form" novalidate>
+        <header class="toolbar">
+          <h2 id="form-heading">New post</h2>
+          <span id="status" role="status" aria-live="polite"></span>
+          <button type="submit" class="primary" id="save">Save</button>
+        </header>
+
+        <div class="fields">
+          <label class="wide"><span>Title <span class="req">*</span></span>
+            <input name="title" required autocomplete="off" />
+          </label>
+          <label><span>Slug <span class="req">*</span></span>
+            <input name="slug" required pattern="[a-z0-9]+(-[a-z0-9]+)*" autocomplete="off" />
+            <small id="slug-hint">URL: /blog/<span id="slug-preview"></span>/</small>
+          </label>
+          <label><span>Format</span>
+            <select name="ext">
+              <option value="md">Markdown (.md)</option>
+              <option value="mdx">MDX (.mdx, raw editing)</option>
+            </select>
+          </label>
+          <label class="wide"><span>Description <span class="req">*</span></span>
+            <input name="description" required autocomplete="off" />
+          </label>
+          <label><span>Publish date <span class="req">*</span></span>
+            <input name="pubDate" type="date" required />
+          </label>
+          <label><span>Updated date</span>
+            <input name="updatedDate" type="date" />
+            <small>Set to today when you open an existing post; clear it to omit.</small>
+          </label>
+          <div class="wide hero">
+            <label><span>Hero image <span class="req">*</span></span>
+              <input name="heroImage" required placeholder="/images/blog/photo.jpg" autocomplete="off" />
+            </label>
+            <label class="button">Upload…<input type="file" id="hero-upload" accept="image/*" hidden /></label>
+            <img id="hero-preview" alt="" hidden />
+          </div>
+        </div>
+
+        <p id="extra-keys" class="hint" hidden></p>
+        <div id="editor"></div>
+        <textarea id="raw-editor" spellcheck="false" hidden aria-label="Raw MDX source"></textarea>
+      </form>
+    </main>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
